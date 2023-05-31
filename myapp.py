@@ -11,8 +11,14 @@ import path
 from io import BytesIO
 
 st.set_option('deprecation.showfileUploaderEncoding', False)
-st.title("Location Image Classifier")
-st.text("Provide the image file for classification")
+st.title("Image Classifier for Location")
+st.text("Please upload a picture of one of the places listed below:")
+st.markdown("- Buildings")
+st.markdown("- Forest")
+st.markdown("- Glacier")
+st.markdown("- Mountain")
+st.markdown("- Sea")
+st.markdown("- Street")
 
 dir = path.Path(".").abspath()
 sys.path.append(dir)
